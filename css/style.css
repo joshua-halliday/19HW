@@ -85,6 +85,7 @@ color: #000000;
 
 /* Nav bar CSS */
 .mobileNav {display: none;}
+.tabletNav {display: none;}
 .navigation {
     background-color: #2F4A75;
     position: absolute;
@@ -167,6 +168,7 @@ ul {
 .mobileHeroImg {
     display: none;
 }
+.tabletHeroImg {display: none;}
 .heroImg {
     height: 766px;
     top: 0px;
@@ -386,9 +388,13 @@ bottom: 28px;
     }
   }
 
-/* Media Queries */
 
- @media only screen and (max-width: 600px) {
+
+
+
+/* Media Queries Moblie */
+
+ @media only screen and (max-width: 699px) {
     
 /* Typography for Mobile */
 
@@ -427,36 +433,10 @@ button {
     font-size: 20px;
     line-height: 27px;
 }
-    /* Mobile Projects */
-    .projectsSection {
-        margin-top: 733px;
-       
-    }
-    .projectsTitle {
-        padding-top: 60px;
-        padding-bottom: 40px;
-        margin: 0px;
-    }
-    .cardHolder {
-         flex-direction: column;
-     }
-     .card {
-         width: 100%;
-     }
-     .middleCard {
-         margin-top: 40px;
-         margin-bottom: 40px;
-     }
-     #mPbutton {
-         width: 100%;
-         height: 48px;
-         margin-left: 0%;
-         margin-right: 0%;
-         margin-top: 40px;
-         margin-bottom: 60px;
-     }
+  
 /* mobile header */
 .navigation {display: none;}
+.tabletNav {display: none;}
 .mobileNav {
     display: inline-block;
     height: 80px;
@@ -515,6 +495,34 @@ button {
     width: 86.12%;
     top: 625px;
 }
+  /* Mobile Projects */
+  .projectsSection {
+    margin-top: 733px;
+   
+}
+.projectsTitle {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+.cardHolder {
+     flex-direction: column;
+ }
+ .card {
+     width: 100%;
+ }
+ .middleCard {
+     margin-top: 40px;
+     margin-bottom: 40px;
+ }
+ #mPbutton {
+     width: 100%;
+     height: 48px;
+     margin-left: 0%;
+     margin-right: 0%;
+     margin-top: 40px;
+     margin-bottom: 60px;
+ }
 
 /* mobile footer */
 #desktopFooter {
@@ -582,3 +590,134 @@ color: white;
     bottom: 12.17%;
 }
  }
+
+
+ /* Media Queries Desktop desktop small */
+
+ @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    #contentH1 {
+        width: 60%;
+        top: 76px;
+    }
+    #contentH4 {
+        width: 60%;
+    }
+    .heroImg img {
+        width: 25.4%;
+        height: auto;
+        top: 156px;
+    }
+    #contJh {
+       
+        width: 50%;
+        bottom: 79px;
+    }
+
+ }
+  /* Media Queries Desktop tablet */
+  @media only screen and (min-width: 700px) and (max-width: 999px) {
+   /* Tablet Nav */
+
+   .navigation {display: none;}
+   .tabletNav {
+       
+    background-color: #2F4A75;
+    position: absolute;
+    width: 86.12%;
+    height: 131px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 6.94%;
+    padding-right: 6.94%;
+    padding-top: 0px;
+}
+#tabletMenuIcon {
+    width: 54px;
+    right: 6.94%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+/* Hero Tablet */
+
+.heroImg {
+    display: none;
+}
+.mobileHeroImg {display: none;}
+.tabletHeroImg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 131px;
+    padding-left: 6.94%;
+    padding-right: 6.94%;
+}
+.jhImgTablet {
+   justify-content: center;
+   align-items: center;
+    width:30%;
+    height: auto;
+    left: 6.94%;
+    right: 6.94%;
+    margin-top: 70px;
+}
+#contentH1 {
+    right: 6.94%;
+    width: 86.12%;
+    top: 450px;
+}
+
+#contentH4 {
+    right: 6.94%;
+    width: 86.12%;
+    top: 704px;
+}
+#bAbout {
+    right: 6.94%;
+    left: 6.94%;
+    width: 86.12%;
+    top: 885px;
+}
+  
+/* Tablet Projects */
+.projectsSection {
+    margin-top: 1138px;
+}
+.cardHolder {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0px;
+    flex-direction: row;
+    flex: 1;
+}
+.card {
+    width: 48%;
+    margin-bottom: 4%;
+}
+#mPbutton {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Tablet Footer */
+    #contJh {
+       
+        width: 35%;
+        bottom: 79px;
+    }
+    #yellowLogo {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        left: 6.94%;
+        right: 68.96%;
+        bottom: 128px;
+        }
+
+  }
