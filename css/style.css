@@ -227,7 +227,15 @@ button {
     line-height: 33px;
     width: 31%;
     height: 62px;
+    transition: all 0.3s ease-in-out;
 }
+button:hover {
+    background-color: #722873;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .content button {
     position: absolute;
     left: 6.94%;
@@ -264,9 +272,13 @@ button {
     padding: 0px;
     background-color: #1D7365;
     border-radius: 10px;
-   
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .card h4 {
     padding: 25px;
@@ -288,8 +300,8 @@ button {
     border-top-right-radius: 10px;
 }
 #mPbutton {
-    margin-left: 34.5%;
-    margin-right: 34.5%;
+    margin-left: 34%;
+    margin-right: 34%;
     margin-top: 64px;
     margin-bottom: 110px;
     width: 32%;
