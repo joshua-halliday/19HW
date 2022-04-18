@@ -87,6 +87,7 @@ color: #000000;
 .mobileNav {display: none;}
 .mobileMenu {display: none;}
 .tabletNav {display: none;}
+.tabletMenu {display: none;}
 .navigation {
     background-color: #2F4A75;
     position: absolute;
@@ -680,7 +681,49 @@ color: white;
     right: 6.94%;
     padding-top: 13px;
     padding-bottom: 13px;
+    opacity: 1;
+    z-index: 1100;
+    transition: all .3s ease-in-out;
 }
+
+.tabletMenu {
+    display: inline;
+    background-color: #1D7365;
+    height: 0px;
+    width: 345px;
+    right: 0px;
+    position: absolute;
+    top: 131px;
+    padding-left: 6.94%;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+}
+.tabletMenu ul{
+opacity: 0;
+align-items: center;
+padding-left: 54px;
+padding-right: 54px;
+transition: all .3s ease-in-out;
+}
+.tabletMenu li{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#tabletCloseIcon {
+    opacity: 0;
+    width: 54px;
+    right: 6.94%;
+    padding-top: 38.5px;
+    padding-bottom: 38.5px;
+    position: absolute;
+    z-index: 1000;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
 /* Hero Tablet */
 
 .heroImg {

@@ -37,3 +37,37 @@ $("#mobileCloseIcon").click(function(){
         $("#mobileMenuIcon").css("opacity", "1"); 
     }
 });
+
+/* Tablet Click Menu */
+
+$("#tabletMenuIcon").click(function(){
+    $(".tabletMenu").toggleClass("active");
+    if ($(".tabletMenu").hasClass("active")) {
+        $(".tabletMenu").css("height", "412px");
+        $(".tabletMenu ul").css("opacity", "1");
+        $("#tabletCloseIcon").css("opacity", "1");
+        $("#tabletMenuIcon").css("opacity", "0"); 
+    }
+    else {
+        $(".tabletMenu").css("height", "0px");
+        $(".tabletMenu ul").css("opacity", "0");
+        $("#tabletCloseIcon").css("opacity", "0");
+        $("#tabletMenuIcon").css("opacity", "1"); 
+    }
+});
+
+$("#tabletCloseIcon").click(function(){
+    $(".tabletMenu").toggleClass("active");
+    if ($(".tabletMenu").hasClass("active")) {
+        $(".tabletMenu").css("height", "412px");
+        $(".tabletMenu ul").css("opacity", "1");
+        $("#tabletCloseIcon").css("opacity", "1");
+        $("#tabletMenuIcon").css("opacity", "0"); 
+    }
+    else {
+        $(".tabletMenu").css("height", "0px");
+        $(".tabletMenu ul").css("opacity", "0");
+        $("#tabletCloseIcon").css("opacity", "0");
+        $("#tabletMenuIcon").css("opacity", "1"); 
+    }
+});
