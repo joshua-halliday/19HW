@@ -448,18 +448,20 @@ button {
 .mobileMenu {
     display: inline;
     background-color: #1D7365;
-    height: 300px;
+    height: 0px;
     width: 216px;
     position: absolute;
     top: 80px;
     padding-left: 6.94%;
-    z-index: 1000;
-    
+    z-index: 100;
+    transition: all .3s ease-in-out;
 }
 .mobileMenu ul{
+opacity: 0;
 align-items: center;
 padding-left: 54px;
 padding-right: 54px;
+transition: all .3s ease-in-out;
 }
 .mobileMenu li{
     text-decoration: none;
@@ -468,12 +470,26 @@ padding-right: 54px;
     padding-top: 16px;
     padding-bottom: 16px;
 }
-
-#mobileMenuIcon {
+#mobileCloseIcon {
+    opacity: 0;
     width: 54px;
     margin-left: 6.94%;
     padding-top: 13px;
     padding-bottom: 13px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    transition: all .3s ease-in-out;
+}
+#mobileMenuIcon {
+    display: flex;
+    opacity: 1;
+    width: 54px;
+    margin-left: 6.94%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    z-index: 1100;
+    transition: all .3s ease-in-out;
 }
 .mobileHeaderLogo {
     position: absolute;
